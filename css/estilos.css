@@ -1,0 +1,85 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243247;
+    background-color: #fff8e7; 
+}
+
+
+.encabezado {
+    background-color: #512da8; 
+    text-align: center;
+    padding: 36px 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+
+.contenedor {
+    width: min(900px, 92%);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+/* 4. Tarjetas */
+.tarjeta {
+    background-color: white;
+    padding: 32px; 
+    border: 1px solid #d9e1eb;
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(20, 40, 70, 0.08);
+}
+
+.tarjeta h2 {
+    color: #176b73;
+    margin-top: 0;
+}
+
+
+.tarjeta p {
+    font-size: 1.05rem;
+}
+
+.enlace {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1456a0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: #512da8;
+    text-decoration: underline;
+}
+
+.pie {
+    text-align: center;
+    padding: 18px;
+    background-color: #dfe8f2;
+    color: #33465c;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado h1 {
+        font-size: 1.6rem;
+    }
+}
